@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyzel</title>
+    <style>
+        
+        body {
+            background: url('mbaktelpon.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", "Helvetica", "Arial";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 133, 226);
+}
+
+nav {
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.navbar a{
+    opacity: 0.75;
+}
+
+.navbar a:hover{
+    opacity: 1;
+}
+
+.navlinks {
+    margin-inline: 15px;
+    color: #d3d3d3;
+}
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        .container h1 {
+            color: orange;
+            margin-bottom: 20px;
+        }
+
+        .container label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .container input, .container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            background-color: yellow;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #ffcc00;
+        }
+
+        .feedback {
+            display: none;
+            margin-top: 20px;
+            color: orange;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .container input, .container textarea {
+                width: calc(100% - 10px);
+            }
+
+            .container button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li> <a title="Home" class='navlinks' href="Home.html">Home</a></li>
+          <li> <a title="Menu" class='navlinks' href="menu.html">Menu</a></li>
+          <li> <a title="Contact" class='navlinks' href="Contact.html">Contact</a></li>
+          <li> <a title="About Us" class='navlinks' href="aboutus.html">About Us</a></li>
+          <li> <a title="FAQ" class='navlinks' href="faq1.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="feedback" id="feedbackMessage">Your message has been sent!</div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulate form submission (e.g., via AJAX)
+
+            // Display feedback message
+            document.getElementById('feedbackMessage').style.display = 'block';
+
+            // Reset form fields
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
+    <footer>
+            <p>© 2024 Dyzel. All rights reserved since 2017.</p>
+        </div>
+    </footer>
+</body>
+</html>
