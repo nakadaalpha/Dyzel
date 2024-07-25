@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyzel</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style_faq.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li> <a title="Home" class='navlinks' href="Home.html">Home</a></li>
+          <li> <a title="Menu" class='navlinks' href="menu.html">Menu</a></li>
+          <li> <a title="Contact" class='navlinks' href="Contact.html">Contact</a></li>
+          <li> <a title="About Us" class='navlinks' href="aboutus.html">About Us</a></li>
+          <li> <a title="FAQ" class='navlinks' href="faq1.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+   <header>
+        <div class="header-content">
+            <h1>FAQ</h1>
+            <p>FAQs make it easier for you to find important information quickly. Discover answers to common questions about our services.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How does the Dyzel menu appear?</h2>
+                <div class="answer">
+                    <p>The Dyzel menu is adapted from luxurious fine dining menus from various restaurants around the world. 
+                        It has been transformed into diet-friendly and healthy meals created by top professional chefs in Jakarta, 
+                        who have extensive experience working in both local and international 5-star restaurants.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Is the nutritional content of Dyzel menus guaranteed?</h2>
+                <div class="answer">
+                    <p>The menus available at Dyzel are closely monitored and fully supported by the best nutrition specialists 
+                        and dietitians in Jakarta.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How many customers have successfully subscribed to Dyzel?</h2>
+                <div class="answer">
+                    <p>Hundreds of thousands of people have successfully lost weight with Dyzel.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What does a Dyzel box contain?</h2>
+                <div class="answer">
+                    <p>Each Dyzel box contains low-calorie meals, typically around 450-550 calories. The meals include complex carbohydrates, 
+                        lean animal protein, unsaturated fats, vegetables, and minimal sugar, salt, and saturated fats.</p>
+                </div>
+            </div>
+
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What is DyzelFitness?</h2>
+                <div class="answer">
+                    <p>DyzelFitness is a comprehensive ebook that provides information on diet and healthy living. 
+                        It also includes a complete video exercise program suitable for beginners and experts, 
+                        which can be practiced at home, in the office, or at the gym.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How does the DyzelFitness system work?</h2>
+                <div class="answer">
+                    <p>Dyzel operates on a subscription basis for one year. If you purchase a package that includes DyzelFitness, 
+                        you'll receive a special account to access the DyzelFitness website.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What is the pricing for Dyzel packages based on the number of days?</h2>
+                <div class="answer">
+                    <p>The pricing applies to deliveries spanning 5 to 20 days. If you need additional days on weekends, 
+                        you can request them separately.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>When can I expect Dyzel food deliveries?</h2>
+                <div class="answer">
+                    <p>Food deliveries are estimated to arrive before 13:00 for lunch and before 18:00 for dinner.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function toggleAnswer(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+    <footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+        <div class="container">
+            <p>© 2024 Dyzel. All rights reserved since 2017.</p>
+        </div>
+    </footer>    
+</body>
+</html>
