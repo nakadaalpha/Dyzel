@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyzel</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    @import "https://fonts.googleapis.com/css?family=Poppins";
+
+/* HTML Page */
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", "Helvetica", "Arial";
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 133, 226);
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('makanankanan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFD700;
+}
+.subheader {
+    font-size: 1.5em;
+}
+.text {
+    margin-top: 20px;
+}
+.refund {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    .header {
+        font-size: 2em;
+    }
+    .subheader {
+        font-size: 1.2em;
+    }
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .navbar .menu.active {
+        display: flex;
+    }
+    .navbar .menu li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .content {
+        left: 5%;
+        right: 5%;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.5em;
+    }
+    .subheader {
+        font-size: 1em;
+    }
+}
+.products-section {
+    padding: 50px 0;
+    background-color: #222;
+    text-align: center;
+}
+.products-section h2 {
+    color: #FFD700;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.products-section p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product h3 {
+    color: #FFD700;
+    margin: 20px 0 10px;
+}
+.product p {
+    color: #fff;
+}
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.product a:hover {
+    background-color: #ffcc00;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li> <a title="Home" class='navlinks' href="Home.html">Home</a></li>
+          <li> <a title="Menu" class='navlinks' href="menu.html">Menu</a></li>
+          <li> <a title="Contact" class='navlinks' href="Contact.html">Contact</a></li>
+          <li> <a title="About Us" class='navlinks' href="aboutus.html">About Us</a></li>
+          <li> <a title="FAQ" class='navlinks' href="faq1.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+      <div class="background-image"></div>
+      <div class="content">
+          <div class="header">YOUR EASY DIET SOLUTION</div>
+          <div class="subheader">DIET & HEALTHY CATERING #1 in INDONESIA</div>
+          <div class="text">
+            Already joined the Yellow Fit Kitchen program but your weight isn't going down??<br>
+              <span class="refund">FULL MONEY REFUND 100%</span>
+          </div>
+      </div>
+  </div>
+
+    <div class="products-section">
+        <h2>OUR BEST PRODUCT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate culpa, sint natus nam inventore sunt consequuntur, asperiores distinctio magnam minus sed, facere hic repellat exercitationem error aliquam! Libero, soluta recusandae.</p>
+        <div class="products">
+            <div class="product">
+                <img src="makanan1.jpg" alt="Weight Loss Program">
+                <h3>WEIGHT LOSS PROGRAM</h3>
+                <p>(Program Menurunkan berat badan)</p>
+                <a href="#">SEE MORE</a>
+            </div>
+            <div class="product">
+                <img src="makanan2.png" alt="Weight Loss Protein+">
+                <h3>WEIGHT LOSS PROTEIN+</h3>
+                <p>(Program for Men)</p>
+                <a href="#">SEE MORE</a>
+            </div>
+            <div class="product">
+                <img src="Taco.png" alt="Yellow Fitness">
+                <h3>DYZEL FITNESS</h3>
+                <p>Taco's De Alma</p>
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+      <div class="container">
+          <p>© 2024 Dyzel. All rights reserved since 2017.</p>
+      </div>
+  </footer>   
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar .menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
