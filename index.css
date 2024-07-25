@@ -1,65 +1,65 @@
-@import "https://fonts.googleapis.com/css?family=Poppins";
+@import 'https://fonts.googleapis.com/css?family=Poppins';
 
 /* HTML Page */
 
 body {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
-    background-color: #222;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Helvetica', 'Arial';
+	background-color: #222;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(52, 133, 226);
+	text-decoration: none;
+	color: rgb(52, 133, 226);
 }
 
 /* Navbar Styles */
 
-.body{
-    background-color: slategrey;
+.body {
+	background-color: slategrey;
 }
 
 nav {
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5vh;
-    width: 100%;
-    background-color: rgba(22, 22, 22, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    z-index: 1;
+	padding: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 5vh;
+	width: 100%;
+	background-color: rgba(22, 22, 22, 0.8);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	z-index: 1;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    list-style-type: none;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
-    padding: 12px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	list-style-type: none;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	padding: 12px;
 }
 
-.navbar a{
-    opacity: 0.75;
+.navbar a {
+	opacity: 0.75;
 }
 
-.navbar a:hover{
-    opacity: 1;
+.navbar a:hover {
+	opacity: 1;
 }
 
 .navlinks {
-    margin-inline: 15px;
-    color: #d3d3d3;
+	margin-inline: 15px;
+	color: #d3d3d3;
 }
 
 .applelogo {
-    margin-inline: 25px;
-    margin-top: -2.9px;
+	margin-inline: 25px;
+	margin-top: -2.9px;
 }

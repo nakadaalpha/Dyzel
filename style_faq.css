@@ -1,144 +1,145 @@
-@import "https://fonts.googleapis.com/css?family=Poppins";
+@import 'https://fonts.googleapis.com/css?family=Poppins';
 
 /* HTML Page */
 
 body {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
-    background-color: #222;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Helvetica', 'Arial';
+	background-color: #222;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(52, 133, 226);
+	text-decoration: none;
+	color: rgb(52, 133, 226);
 }
 
-
 nav {
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5vh;
-    width: 100%;
-    background-color: rgba(22, 22, 22, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    z-index: 1;
+	padding: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 5vh;
+	width: 100%;
+	background-color: rgba(22, 22, 22, 0.8);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	z-index: 1;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    list-style-type: none;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
-    padding: 12px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	list-style-type: none;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	padding: 12px;
 }
 
-.navbar a{
-    opacity: 0.75;
+.navbar a {
+	opacity: 0.75;
 }
 
-.navbar a:hover{
-    opacity: 1;
+.navbar a:hover {
+	opacity: 1;
 }
 
 .navlinks {
-    margin-inline: 15px;
-    color: #d3d3d3;
+	margin-inline: 15px;
+	color: #d3d3d3;
 }
 
 header {
-    background: url('background.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
+	background: url('background.jpg') no-repeat center center/cover;
+	color: #fff;
+	text-align: center;
+	padding: 50px 20px;
 }
 
 .header-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	display: inline-block;
 }
 
 h1 {
-    font-size: 3em;
-    color: #ffd700;
+	font-size: 3em;
+	color: #ffd700;
 }
 
 header p {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .tab {
-    background: #fff;
-    border: 2px solid #000;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 25px;
+	padding: 10px 20px;
+	margin: 0 10px;
+	cursor: pointer;
+	transition:
+		background 0.3s,
+		color 0.3s;
 }
 
 .tab.active {
-    background: #000;
-    color: #fff;
+	background: #000;
+	color: #fff;
 }
 
 .tab:hover {
-    background: #ffd700;
-    color: #000;
+	background: #ffd700;
+	color: #000;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 .faq {
-    margin: 20px 0;
+	margin: 20px 0;
 }
 
 .question {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background 0.3s;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background 0.3s;
 }
 
 .question:hover {
-    background: #f1f1f1;
+	background: #f1f1f1;
 }
 
 .question h2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	font-size: 1.2em;
 }
 
 .question h2:before {
-    content: '\2022';
-    font-size: 2em;
-    color: #ffd700;
-    margin-right: 10px;
+	content: '\2022';
+	font-size: 2em;
+	color: #ffd700;
+	margin-right: 10px;
 }
 
 .answer {
-    margin-top: 10px;
-    display: none;
+	margin-top: 10px;
+	display: none;
 }
 
 .question.active .answer {
-    display: block;
+	display: block;
 }
